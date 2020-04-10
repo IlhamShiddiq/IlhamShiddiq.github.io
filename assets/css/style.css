@@ -1,0 +1,1118 @@
+/* HTML Setting */
+html {
+    scroll-behavior: smooth;
+}
+/* Akhir HTML Setting */
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(165, 164, 164);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #915027;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4d2c18;
+    transition:all 300ms ease-in-out;
+   -webkit-transition:all 300ms ease-in-out;
+   -moz-transition:all 300ms ease-in-out;
+   -o-transition:all 300ms ease-in-out;
+   -ms-transition:all 300ms ease-in-out;
+}
+/* Akhir ScrollBar */
+
+
+/* Navigasi */
+.navbar-1, .navbar-2 {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    padding: 0;
+    border-bottom: black 1px solid;
+}
+.navbar-1 {
+    animation: nav-animate .8s;
+}
+.navbar-1 button.bars-menu {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    outline-color: rgba(255, 0, 0, 0);
+}
+.navbar-1 button.bars-menu:hover {
+    opacity: .7;
+}
+.navbar-2 {
+    display: none; 
+}
+nav.navbar {
+    text-align: center;
+}
+.navbar-nav {
+    margin: auto;
+}
+
+
+/* Akhir Navigasi */
+
+/* Section 1 */
+.section-1 {
+    background-size: cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    animation: animate 12s ease-in infinite;
+    background-attachment: fixed;
+}
+.section-1 .section-1-tulisan {
+    position: absolute;
+    bottom: 0; left: 0; right: 0; top: 40%;
+    text-align: center;
+}
+.section-1 .section-1-tulisan a {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    bottom: 40px; left: 0; right: 0;
+}
+
+@keyframes animate {
+    0%, 100%{
+        background-image: url('../img/bg-section-1.jpg');
+    }
+    25%{
+        background-image: url('../img/bg-section-1.jpg');
+    }
+    50%{
+        background-image: url('../img/bg-section-2.jpg');
+    }
+    75%{
+        background-image: url('../img/bg-section-2.jpg');
+    }
+}
+/* Akhir Section 1 */
+
+/* Section 2 */
+.section-2 {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.section-2 .fav-menu {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* Caption Image Only */
+.fav-menu-wrapper{
+    height:auto;
+    overflow:hidden;
+}
+.fav-menu-image-container{
+    float:left;
+    width:300px;
+    height:345px;
+    position:relative;
+    cursor:pointer;
+}
+.fav-menu-image-container img{
+    width:100%;
+    position:absolute;
+}
+.fav-menu-image-caption {
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.7);
+    position:absolute; 
+    opacity:0; 
+    transition:all 300ms ease-in-out;
+   -webkit-transition:all 300ms ease-in-out;
+   -moz-transition:all 300ms ease-in-out;
+   -o-transition:all 300ms ease-in-out;
+   -ms-transition:all 300ms ease-in-out;
+    top: 0;
+}
+.fav-menu-image-caption h1{
+    text-align:center;
+    text-transform:uppercase;
+    font-size:25px;
+    color:white;
+    margin-top: 30px;
+}
+.fav-menu-image-caption p{
+    text-align:center; 
+    color:#fff;
+}
+.fav-menu-image-caption h2{
+    margin-top: 35px;
+    text-align: center;
+    font-size: 70px;
+    color:white;
+    opacity: 0.8;
+}
+.fav-menu-image-container:hover .fav-menu-image-caption{
+    opacity:1;
+}
+
+/* Akhir Section 2 */
+
+/* Section 3 */
+.section-3 {
+    width: 100%;
+    background-image: url('../img/bg-section-3.jpg');
+    background-attachment: fixed;
+    padding: 60px;
+}
+.section-3 .kotak-service {
+    width: 100%;
+    height: 150px;
+    margin: 30px;
+}
+.section-3 .kotak-service .icon-service h1 {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+.section-3 .kotak-service .detail-service h2 {
+    font-size: 21px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.section-3 .kotak-service:hover .detail-service h2, .section-3 .kotak-service:hover .icon-service h1 {
+    opacity: 0.5;
+    transition:all 300ms ease-in-out;
+    -moz-transition:all 300ms ease-in-out;
+    -o-transition:all 300ms ease-in-out;
+    -ms-transition:all 300ms ease-in-out;
+    cursor: pointer;
+}
+/* Akhir Section 3 */
+
+/* Section 4 */
+.section-4 {
+    width: 100%;
+    background-color: #fff;
+}
+.section-4 .carousel-menu {
+    background-color: black;
+    padding: 5px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.section-4 .carousel-menu .menu {
+    background-color: #fff;
+    padding: 15px;
+}
+.section-4 .carousel-menu .menu .foto-menu {
+    width: 100%;
+    height: 120px;
+}
+.section-4 .carousel-menu .menu .foto-menu img {
+    max-width: 120px;
+}
+.section-4 .carousel-menu .menu .detail-menu {
+    width: 100%;
+    color: black;
+    vertical-align: middle;
+}
+.section-4 .carousel-menu .menu .detail-menu h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.section-4 .carousel-menu .menu .detail-menu h2 {
+    font-size: 15px;
+}
+.section-4 .carousel-menu .menu .detail-menu h3 {
+    font-size: 15px;
+    margin-top: -10px;
+}
+.section-4 .carousel-menu .menu .detail-menu h3 span {
+    font-weight: bold;
+}
+.section-4 .carousel-menu .center-menu {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* Akhir Section 4 */
+
+/* Section 5 */
+.section-5 {
+    width: 100%;
+    padding: 80px;
+    background-image: url('../img/bg-section-5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.section-5 .kotak-reservasi, .kotak-informasi {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    padding-top: 10px;
+}
+.section-5 .kotak-reservasi .judul, .kotak-informasi .judul {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.section-5 .reservasi {
+    margin-top: 30px;
+}
+.section-5 .kotak-reservasi .form-reservasi {
+    margin-top: 30px;
+}
+.section-5 .kotak-reservasi small {
+    color: black;
+}
+.section-5 .kotak-reservasi button {
+    width: 180px;
+    border-radius: 0;
+    margin-top: 32px;
+    background-color: rgb(90, 79, 79);
+    border: 1px rgb(90, 79, 79) solid;
+}
+.section-5 .kotak-reservasi button:hover {
+    background-color: rgb(46, 30, 30);
+}
+.section-5 .kotak-informasi .big-title {
+    font-size: 21px;
+    font-weight: 500;
+}
+.section-5 .kotak-informasi .kalimat-biasa {
+    font-size: 14px;
+    margin-top: -15px;
+}
+.section-5 .kotak-informasi .kalimat-biasa-kontak span {
+    font-size: 15px;
+}
+.section-5 .kotak-informasi .kalimat-biasa a {
+    font-size: 21px;
+    color: rgb(54, 52, 52);
+    margin-left: 20px;
+    margin-right: 3px;
+}
+.section-5 .kotak-informasi .kalimat-biasa a:hover {
+    color: rgb(85, 81, 81);
+}
+.section-5 .kotak-informasi .maps-loc button {
+    background-color: rgb(90, 79, 79);
+    border: 1px rgb(90, 79, 79) solid;
+    border: 0;
+    padding: 8px;
+    width: 180px;
+    border-radius: 0;
+    margin-top: 15px;
+}
+.section-5 .kotak-informasi .maps-loc button:hover {
+    background-color: rgb(46, 30, 30);
+    border: 0;
+}
+/* Akhir Section 5 */
+
+/* Section 6 */
+.section-6 {
+    width: 100%;
+    padding-bottom: 40px;
+}
+.section-6 .kotak-galeri {
+    width: 100%;
+    height: 370px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+.section-6 .kotak-galeri .galeri-hitam {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0; left: 0;
+    opacity: 0;
+    transition:all 300ms ease-in-out;
+   -webkit-transition:all 300ms ease-in-out;
+   -moz-transition:all 300ms ease-in-out;
+   -o-transition:all 300ms ease-in-out;
+   -ms-transition:all 300ms ease-in-out;
+}
+.section-6 .kotak-galeri:hover .galeri-hitam {
+    opacity: 1;
+}
+.section-6 .gal-1 {
+    background-image: url('../img/galeri/gal-1.jpg');
+}
+.section-6 .gal-2 {
+    background-image: url('../img/galeri/gal-2.jpg');
+}
+.section-6 .gal-3 {
+    background-image: url('../img/galeri/gal-3.jpg');
+}
+.section-6 .gal-4 {
+    background-image: url('../img/galeri/gal-4.jpg');
+}
+.section-6 .gal-5 {
+    background-image: url('../img/galeri/gal-5.jpg');
+}
+/* Akhir Section 6 */
+
+/* Section 7 */
+.section-7 {
+    width: 100%;
+    background-image: url('../img/bg-section-7.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-7 .carousel-ulasan {
+    margin-top: -20px;
+}
+.section-7 .carousel-ulasan .indikator ol {
+    padding-top: 80px;
+    margin-bottom: -30px;
+}
+.section-7 .carousel-ulasan .carousel-item {
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    text-align: center;
+}
+.section-7 .carousel-ulasan .carousel-item .pembungkus-ulasan {
+   background-color: rgb(255, 255, 255, 0.8);
+   padding: 40px;
+   margin-left: 30px;
+   margin-right: 30px;
+   height: 240px;
+}
+.section-7 .carousel-ulasan .carousel-item .pembungkus-ulasan .rate-ulasan {
+    color: rgb(179, 204, 35);
+}
+.section-7 .carousel-ulasan .carousel-item .foto-ulasan {
+    float: left;
+}
+.section-7 .carousel-ulasan .carousel-item .foto-ulasan img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0);
+    border-radius: 100px;
+    margin: auto;
+    margin-right: 30px;
+}
+.section-7 .carousel-ulasan .carousel-item .nama-ulasan {
+    font-size: 18px;
+    font-weight: bold;
+}
+.section-7 .carousel-ulasan .carousel-item .ulasan {
+    font-size: 15px;
+    margin-top: 10px;
+}
+/* Akhir Section 7 */
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: white;
+    padding-bottom: 35px;
+}
+.footer .kotak-footer {
+    margin: 5px;
+    margin-top: 40px;
+
+}
+.footer .kotak-footer .judul-footer {
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer .kotak-footer .konten-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(202, 202, 202);
+}
+.footer .kotak-footer .konten-footer a {
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+    line-height: 30px;
+}
+.footer .sosmed-wingstone {
+    margin-top: 30px;
+}
+.footer .sosmed-wingstone a {
+    font-size: 25px;
+    color: rgb(202, 202, 202);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.footer .sosmed-wingstone a:hover {
+    color: rgb(56, 53, 53);
+    transition:all 300ms ease-in-out;
+   -webkit-transition:all 300ms ease-in-out;
+   -moz-transition:all 300ms ease-in-out;
+   -o-transition:all 300ms ease-in-out;
+   -ms-transition:all 300ms ease-in-out;
+}
+.footer .kotak-footer .konten-footer a:hover {
+    color: rgb(231, 34, 34);
+}
+.footer .kotak-footer .konten-footer .kotak-ig {
+    background-color: rgb(202, 202, 202);
+    height: 100px;
+    background-size: cover;
+}
+.footer .copyright {
+    margin-top: 40px;
+    font-size: 14px;
+}
+.footer .kotak-footer-spe {
+    margin-bottom: 20px;
+}
+.footer .kotak-ig {
+    background-position: center;
+}
+.ig-1 {
+    background-image: url('../img/Ig/ig-1.jpg');
+}
+.ig-2 {
+    background-image: url('../img/Ig/ig-2.jpg');
+}
+.ig-3 {
+    background-image: url('../img/Ig/ig-3.jpg');
+}
+.ig-4 {
+    background-image: url('../img/Ig/ig-4.jpg');
+}
+.ig-5 {
+    background-image: url('../img/Ig/ig-5.jpg');
+}
+.ig-6 {
+    background-image: url('../img/Ig/ig-6.jpg');
+}
+/* Akhir Footer */
+
+
+
+
+
+/* Utilities */
+@keyframes nav-animate {
+    from {margin-top: -100px;}
+    to {margin-top: 0;}
+}
+
+.section-judul {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.section-judul-ulasan {
+    margin-top: 5px;
+    color: white;
+}
+.section-judul h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+}
+.section-judul h2 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400;
+}
+.section-judul hr {
+    border-top: 3px red solid;
+    width: 10%;
+}
+#buttonUp {
+    position: fixed;
+    display: none;
+    right: 20px;
+    bottom: 20px;
+    z-index: 3;
+    background-color: rgb(117, 206, 35);
+    width: 60px;
+    height: 60px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 25px;
+    outline-color: rgba(255, 0, 0, 0);
+}
+#buttonUp:hover {
+    background-color: rgb(84, 160, 13);
+}
+.buttonWA {
+    display: none;
+    text-align: center;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 3;
+    font-size: 32px;
+    background-color: rgb(29, 189, 24);
+    width: 60px;
+    height: 60px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    padding-bottom: 3px;
+}
+.buttonWA:hover {
+    background-color: rgb(24, 155, 20);
+}
+#bwa {
+    outline-color: rgba(255, 0, 0, 0);
+}
+iframe.maps-loc {
+    width: 100%;
+    height: 300px;
+}
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+ul.list-unstyled a {
+    transition:all 300ms ease-in-out;
+    -moz-transition:all 300ms ease-in-out;
+    -o-transition:all 300ms ease-in-out;
+    -ms-transition:all 300ms ease-in-out;
+}
+/* Akhir Utilities */
+
+
+
+
+
+
+/* Desktop Screen */
+@media (min-width: 992px) { 
+    /* Khusus Navbar */
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .navbar-nav {
+        height: 60px;
+    }
+    .navbar-nav a.menu {
+        width: 85px;
+        margin-left: 3px;
+        margin-right: 3px;
+        color: white;
+        padding-top: 18px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .navbar-nav a.menu:hover {
+        background-color: rgb(184, 24, 24);
+        animation: ease-in-out;
+    }
+    .autoHover {
+        background-color: rgb(184, 24, 24);
+        animation: ease-in-out;
+    }
+    .navbar-1 .logo-lg-screen {
+        position: relative;
+        height: 140px;
+        background-color: #381f10c4;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -10px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        color: white;
+        margin-left: 13px;
+    }
+    .navbar-1 .logo-lg-screen img {
+        margin-top: -10px;
+    }
+    .navbar-2 .logo-lg-screen {
+        position: relative;
+        background-color: #000000;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -5px;
+        color: white;
+        margin-left: 13px;
+    }
+    .navbar-2 .logo-lg-screen h1 {
+        padding: 16px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .logo-lg-screen:hover {
+        color: white;
+    }
+    .logo-xs-screen{
+        display: none;
+    }
+    .hide-navbar-1 {
+        display: none;
+    }
+    .muncul-navbar-2 {
+        display: inline-block;
+        animation: nav-animate .8s;
+    }
+
+    /* Khusus Section 1 */
+    .section-1 {
+        background-position: center;
+    }
+    .section-1 .section-1-tulisan h1.wingstone {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: bold;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 50%;
+        margin: auto;
+        padding: 15px;
+    }
+    .section-1 .section-1-tulisan h1.sub-wingstone {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 50%;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    /* Section 2 */
+    .fav-menu-image-caption {
+        padding: 20px;
+    }
+
+    /* Section 4 */
+    .section-4 .menumakanan1 {
+        margin-right: 80px;
+    }
+    .section-4 .carousel-menu .menu {
+        height: 150px;
+    }
+
+    /* Section 5 */
+    .section-5 .kotak-reservasi, .kotak-informasi {
+        height: 400px;
+    }
+    .section-5 .kotak-informasi .maps-loc button {
+        background-color: rgb(77, 75, 75);
+        border: 0;
+        padding: 8px;
+        width: 140px;
+        border-radius: 0;
+        font-size: 15px;
+    }
+
+    /* Section 6 */
+    .section-6 .kotak-galeri-genap {
+        margin-top: 70px;
+    }
+
+    /* Section 7 */
+    .section-7 .carousel-ulasan .carousel-item .foto-ulasan img {
+        margin-bottom: 30px;
+    }
+}
+
+/* Tablet Screen */
+@media (max-width: 991.98px) { 
+    .section-judul-ulasan {
+        margin-top: 20px;
+    }
+    /* Khusus Navbar */
+    .navbar {
+        background-color: rgba(255, 255, 255, 1);
+        padding: 8px;
+    }
+    .logo-lg-screen {
+        display: none;
+    }
+    .logo-xs-screen {
+        margin-left: 20px;
+    }
+    .navbar-nav a {
+        color: black;
+        font-weight: 600;
+    }
+
+    /* Khusus Section 1 */
+    .section-1 {
+        background-position: -200px;
+    }
+    .section-1 .section-1-tulisan h1.wingstone {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 60%;
+        margin: auto;
+        padding: 15px;
+    }
+    .section-1 .section-1-tulisan h1.sub-wingstone {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 60%;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    /* Section 2 */
+    .fav-menu-image-caption {
+        text-align: center;
+    }
+    .fav-menu-image-caption h1{
+        text-align:center;
+        text-transform:uppercase;
+        font-size:20px;
+        color:white;
+        margin-top: 30px;
+        display: none;
+    }
+    .fav-menu-image-caption p{
+        display: none;
+    }
+    .fav-menu-image-caption h2{
+        display: none;
+    }
+
+    /* Section 3 */
+    .section-3 .kotak-service .icon-service h1 {
+        font-size: 70px;
+    }
+    .section-3 .kotak-service .detail-service h2 {
+        font-size: 21px;
+    }
+
+    /* Section 4 */
+    .section-4 .menumakanan1 {
+        margin-right: 10px;
+    }
+    .section-4 .carousel-menu .menu .detail-menu h1 {
+        font-size: 14px;
+    }
+    .section-4 .carousel-menu .menu .detail-menu h2 {
+        font-size: 12px;
+    }
+    .section-4 .carousel-menu .menu .detail-menu h3 {
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    .section-4 .carousel-menu .menu .foto-menu img {
+        max-width: 110px;
+    }
+
+    /* Section 5 */
+    .section-5 .kotak-reservasi {
+        padding: 30px;
+    }
+    .section-5 .kotak-informasi {
+        margin-top: 20px;
+    }
+
+    /* Section 7 */
+    .section-7 {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .section-7 .carousel-ulasan .carousel-item {
+        width: 100%;
+        height: 530px;
+        padding: 50px;
+        text-align: center;
+    }
+    .section-7 .carousel-ulasan .carousel-item .pembungkus-ulasan {
+        padding: 30px;
+        margin-top: 20px;
+        height: 200px;
+     }
+    .section-7 .carousel-ulasan .carousel-item .foto-ulasan img {
+        width: 70px;
+        height: 70px;
+    }
+    .section-7 .carousel-ulasan .carousel-item .nama-ulasan {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .section-7 .carousel-ulasan .carousel-item .ulasan {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .section-7 .carousel-ulasan .indikator ol {
+        margin-bottom: 10px;
+    }
+
+    /* Button WA */
+    .buttonWA {
+        display: inline-block;
+    }
+}
+
+/* Landscape Phone Screen */
+@media (max-width: 767.98px) { 
+    .section-judul-ulasan {
+        margin-top: 40px;
+    }
+    /* Khusus Navbar */
+    .navbar {
+        background-color: rgba(255, 255, 255, 1);
+        padding: 8px;
+    }
+    .logo-lg-screen {
+        display: none;
+    }
+    .logo-xs-screen {
+        margin-left: 20px;
+    }
+    .navbar-nav a {
+        color: black;
+        font-weight: 600;
+    }
+
+    /* Khusus Section 1 */
+    .section-1 {
+        background-position: -200px;
+    }
+    .section-1 .section-1-tulisan h1.wingstone {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 80%;
+        margin: auto;
+        padding: 15px;
+    }
+    .section-1 .section-1-tulisan h1.sub-wingstone {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    /* Section 2 */
+    .fav-menu-image-caption {
+        padding: 20px;
+        padding-right: 30px;
+    }
+    .section-2 .row-fav {
+        width: 100%;
+    }
+    .section-2 .fav-menu {
+        margin-top: 10px;
+    }
+    .fav-menu-image-container{
+        width:100%;
+    }
+
+    /* Section 4 */
+    .section-4 .menumakanan1 {
+        margin-right: 0;
+    }
+
+    /* Section 5 */
+    .section-5 {
+        padding: 80px 30px 80px 30px;
+    }
+    .section-5 .kotak-informasi {
+        margin-top: 20px;
+    }
+
+    /* Section 7 */
+    .section-7 {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .section-7 .carousel-ulasan .carousel-item {
+        width: 100%;
+        height: 530px;
+        padding: 50px;
+        text-align: center;
+    }
+    .section-7 .carousel-ulasan .carousel-item .pembungkus-ulasan {
+        padding: 30px;
+        margin-top: 10px;
+        height: 200px;
+     }
+    .section-7 .carousel-ulasan .carousel-item .foto-ulasan img {
+        width: 70px;
+        height: 70px;
+    }
+    .section-7 .carousel-ulasan .carousel-item .nama-ulasan {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .section-7 .carousel-ulasan .carousel-item .ulasan {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .section-7 .carousel-ulasan .indikator ol {
+        margin-bottom: 10px;
+    }
+
+    /* Button WA */
+    .buttonWA {
+        display: inline-block;
+    }
+ }
+
+
+/* Potrait Phone Screen */
+@media (max-width: 575.98px) { 
+    .section-judul-ulasan {
+        margin-top: 40px;
+    }
+    /* Khusus Navbar */
+    .navbar {
+        background-color: rgba(255, 255, 255, 1);
+        padding: 8px;
+    }
+    .logo-lg-screen {
+        display: none;
+    }
+    .logo-xs-screen {
+        margin-left: 30px;
+    }
+    .navbar-collapse {
+        width: 100%;
+    }
+    .navbar-nav a {
+        color: black;
+    }
+
+    /* Khusus Section 1 */
+    .section-1 {
+        background-position: -200px;
+    }
+    .section-1 .section-1-tulisan h1.wingstone {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 80%;
+        margin: auto;
+        padding: 15px;
+    }
+    .section-1 .section-1-tulisan h1.sub-wingstone {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    /* Section 2 */
+    .section-2 .section-judul h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .section-2 .section-judul h2 {
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .section-2 .row-fav {
+        width: 100%;
+    }
+    .section-2 .fav-menu {
+        margin-top: 10px;
+    }
+    .fav-menu-image-container{
+        width:100%;
+    }
+
+    /* Section 4 */
+    .section-4 .carousel-menu .menu .detail-menu h1 {
+        font-size: 16px;
+    }
+    .section-4 .carousel-menu .menu .detail-menu h2 {
+        font-size: 12px;
+    }
+    .section-4 .menumakanan1 {
+        margin-right: 0;
+    }
+    
+    /* Section 5 */
+    .section-5 {
+        padding: 80px 30px 80px 30px;
+    }
+    .section-5 .kotak-informasi {
+        margin-top: 20px;
+    }
+    .section-5 .kotak-informasi .maps-loc iframe {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Section 7 */
+    .section-7 {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .section-7 .carousel-ulasan .carousel-item {
+        width: 100%;
+        height: 530px;
+        padding: 50px;
+        text-align: center;
+    }
+    .section-7 .carousel-ulasan .carousel-item .pembungkus-ulasan {
+        padding: 30px;
+        margin-top: 10px;
+        height: 200px;
+     }
+    .section-7 .carousel-ulasan .carousel-item .foto-ulasan img {
+        width: 70px;
+        height: 70px;
+    }
+    .section-7 .carousel-ulasan .carousel-item .nama-ulasan {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .section-7 .carousel-ulasan .carousel-item .pembungkus-ulasan .rate-ulasan {
+        font-size: 12px;
+    }
+    .section-7 .carousel-ulasan .carousel-item .ulasan {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .section-7 .carousel-ulasan .indikator ol {
+        margin-bottom: 10px;
+    }
+
+    /* Button WA */
+    .buttonWA {
+        display: inline-block;
+    }
+}

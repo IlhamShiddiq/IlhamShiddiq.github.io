@@ -1,0 +1,286 @@
+/* Body Style */
+body.a {
+    background-color: rgb(255, 255, 255);
+}
+/* Akhir Body Style */
+
+/* Navbar */
+.navbar-team {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    z-index: 2;
+}
+a h1.lin {
+    color: black;
+    font-family: raleway-medium;
+}
+.link-nav {
+    width: 100%;
+}
+.link-nav h1 {
+    font-size: 20px;
+    margin: 15px;
+    margin-left: 60px;
+    color: black;
+}
+.link-nav a:hover {
+    text-decoration: none;
+}
+/* Akhir Navbar */
+
+/* Content Style */
+.about-us {
+    height: 250px;
+    padding-top: 90px;
+    width: 100%;
+}
+.about-us .our-team {
+    margin-bottom: 20px;
+}
+.about-us .our-team h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.about-us .our-team hr {
+    width: 20%;
+    border-top: 2px black solid;
+    margin-top: 0px;
+}
+.about-us a.back {
+    padding: 10px;
+    width: 250px;
+    border-radius: 120px;
+    margin: auto;
+    color: white;
+}
+.our-foto {
+    position: relative;
+    height: 300px;
+    background-image: url('../img/tim/cover.jpg');
+    background-size: cover;
+    background-position: center -90px;
+    background-attachment: fixed;
+}
+.foto-member {
+    background-color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-top: -180px;
+    background-size: cover;
+    background-position: center;
+}
+.foto-personal-member {
+    width: 85%;
+    margin-top: 20px;
+    height: 280px;
+    background-color: rgb(94, 91, 91);
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    background-position: center;
+    border-radius: 20px;
+}
+.more-info {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    opacity: 0;
+    color: white;
+    padding: 15px;
+    animation: more-info-2 .4s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.more-info h5 {
+    font-size: 12px;
+    font-weight: lighter;
+}
+.more-info h2 {
+    font-size: 14px;
+    margin-top: -5px;
+    letter-spacing: .5px;
+}
+.more-info .sosmed-member .sos {
+    display: inline-block;
+    width: 35px;
+    border: 1px white solid;
+    margin-top: 8px;
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition:all 300ms ease-in-out;
+    -moz-transition:all 300ms ease-in-out;
+    -o-transition:all 300ms ease-in-out;
+    -ms-transition:all 300ms ease-in-out;
+}
+.more-info .sosmed-member .sos:hover {
+    background-color: white;
+}
+.more-info .sosmed-member .sos:hover a {
+    color: black;
+}
+.more-info .sosmed-member a {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+.foto-personal-member:hover .more-info {
+    opacity: 1;
+    animation: more-info .4s;
+}
+.aria .foto-personal-member {
+    background-image: url('../img/tim/aria.jpg');
+}
+.dafa .foto-personal-member {
+    background-image: url('../img/tim/dafa.jpg');
+}
+.ilham .foto-personal-member {
+    background-image: url('../img/tim/ilham.jpg');
+}
+.salsabila .foto-personal-member {
+    background-image: url('../img/tim/salsabila.jpg');
+}
+.row-skul {
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+.our-school {
+    margin-bottom: 50px;
+}
+.our-school .foto-smk {
+    width: 45%;
+    height: 420px;
+    display: inline-block;
+}
+.our-school .foto-smk-2 {
+    margin-bottom: -40px;
+    margin-left: 20px;
+}
+.foto-smk-1 {
+    background-image: url('../img/tim/foto-smk-1.jpg');
+}
+.foto-smk-2 {
+    background-image: url('../img/tim/foto-smk-2.jpg');
+}
+.about-skul {
+    padding-top: 40px;
+}
+.about-skul h1 {
+    font-family: roboto;
+    font-size: 60px;
+    color: rgb(37, 37, 37);
+}
+.about-skul h2 {
+    font-family: raleway;
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.btn-smk-1 {
+    margin-top: 30px;
+}
+
+hr.hr {
+    border-top: 2px solid black;
+    width: 80%;
+}
+.desc {
+    text-align: justify;
+}
+/* Content Style */
+
+
+/* Utilities */
+@keyframes more-info {
+    from {margin-bottom: -100px;opacity: 0;}
+    to {margin-bottom: 0;opacity: 1;}
+}
+@keyframes more-info-2 {
+    from {margin-bottom: 0px;opacity: 1;}
+    to {margin-bottom: -100px;opacity: 0;}
+}
+/* Akhir Utilities */
+
+
+
+/* Tablet Screen */
+@media (max-width: 991.98px) { 
+
+    /* Content Style */
+    .link-nav h1 {
+        margin-left: 30px;
+    }
+    .our-foto {
+        background-position: center;
+    }
+    .dafa, .ilham, .salsabila {
+        margin-top: 30px;
+    }
+    .desc {
+        font-weight: lighter;
+    }
+    .btn-smk-1 {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Landscape Phone Screen */
+@media (max-width: 767.98px) { 
+
+    /* Content Style */
+    .our-foto {
+        background-position: center -80px;
+    }
+    .aria {
+        margin-top: 40px;
+    }
+    .dafa, .ilham, .salsabila {
+        margin-top: 30px;
+    }
+    .desc {
+        font-weight: lighter;
+    }
+    .btn-smk-1 {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Potrait Phone Screen */
+@media (max-width: 575.98px) { 
+
+    /* Content Style */
+    .our-foto {
+        background-position: -220px -50px;
+    }
+    .aria {
+        margin-top: 20px;
+    }
+    .dafa, .ilham, .salsabila {
+        margin-top: 30px;
+    }
+    .about-skul h1 {
+        font-size: 45px;
+        margin-left: 30px;
+    }
+    .about-skul h2 {
+        font-size: 25px;
+        margin-left: 50px;
+    }
+    .desc {
+        padding: 20px;
+        margin-top: -20px;
+        font-size: 15px;
+        font-family: raleway-light;
+    }
+    .btn-smk-1 {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
