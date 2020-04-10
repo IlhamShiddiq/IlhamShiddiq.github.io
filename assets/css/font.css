@@ -16,3 +16,7 @@
     font-family: "raleway-medium";
     src: url('../font/Raleway-SemiBold.ttf');
 }
+@font-face {
+    font-family: "roboto-regular";
+    src: url('../font/Roboto-Regular.ttf');
+}
