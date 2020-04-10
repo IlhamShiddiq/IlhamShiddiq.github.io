@@ -31,7 +31,6 @@ html {
     width: 100%;
     z-index: 3;
     padding: 0;
-    border-bottom: black 1px solid;
 }
 .navbar-1 {
     animation: nav-animate .8s;
@@ -179,18 +178,24 @@ nav.navbar {
     text-align: center;
     color: white;
 }
+.section-3 .kotak-service .icon-service h1 {
+    transition:all 300ms ease-in-out;
+    -moz-transition:all 300ms ease-in-out;
+    -o-transition:all 300ms ease-in-out;
+    -ms-transition:all 300ms ease-in-out;
+}
 .section-3 .kotak-service .detail-service h2 {
     font-size: 21px;
     text-align: center;
     font-weight: bold;
     color: white;
-}
-.section-3 .kotak-service:hover .detail-service h2, .section-3 .kotak-service:hover .icon-service h1 {
-    opacity: 0.5;
     transition:all 300ms ease-in-out;
     -moz-transition:all 300ms ease-in-out;
     -o-transition:all 300ms ease-in-out;
     -ms-transition:all 300ms ease-in-out;
+}
+.section-3 .kotak-service:hover .detail-service h2, .section-3 .kotak-service:hover .icon-service h1 {
+    opacity: 0.5;
     cursor: pointer;
 }
 /* Akhir Section 3 */
@@ -1001,8 +1006,12 @@ ul.list-unstyled a {
     .navbar-collapse {
         width: 100%;
     }
-    .navbar-nav a {
+    .navbar-nav a.nav-link {
         color: black;
+        font-family: raleway-light;
+        text-align: left;
+        font-size: 14px;
+        padding-left: 30px;
     }
 
     /* Khusus Section 1 */
