@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     $(window).scroll(function(){
-        if($(this).scrollTop() > 900 && $(this).scrollTop() < 1350){
+        if($(this).scrollTop() > 950 && $(this).scrollTop() < 1350){
             $('.link-pelayanan').addClass('auto-hover');
             $('.link-menu').removeClass('auto-hover');
         } else if($(this).scrollTop() >= 1350 && $(this).scrollTop() < 2000){
@@ -17,6 +17,7 @@ $(document).ready(function(){
             $('.link-reservasi').removeClass('auto-hover');
         } else {
             $('.link-galeri').removeClass('auto-hover');
+            $('.link-pelayanan').removeClass('auto-hover');
         }
     });
 
