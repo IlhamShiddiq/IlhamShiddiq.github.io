@@ -35,11 +35,11 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link menu hvr-fade link-menu" href="#section-4">Menu</a>
-          <a class="nav-item nav-link special-element-1 menu hvr-fade link-pelayanan" href="#section-3">Pelayanan</a>
+          <a class="nav-item nav-link menu hvr-fade" href="#section-4">Menu</a>
+          <a class="nav-item nav-link special-element-1 menu hvr-fade" href="#section-3">Pelayanan</a>
           <a class="navbar-brand logo-lg-screen" href="#"><img src="assets/img/logo.png" alt="Logo Wingstone" width="150px"></a>
-          <a class="nav-item nav-link menu hvr-fade link-reservasi" href="#section-5">Reservasi</a>
-          <a class="nav-item nav-link menu hvr-fade link-galeri" href="#section-6">Galeri</a>
+          <a class="nav-item nav-link menu hvr-fade" href="#section-5">Reservasi</a>
+          <a class="nav-item nav-link menu hvr-fade" href="#section-6">Galeri</a>
         </div>
       </div>
     </nav>
@@ -63,7 +63,7 @@
         <h1 class="wingstone">wingstone</h1>
         <h1 class="sub-wingstone">start flying with our wings</h1>
         <div class="btn-ke-bawah text-center">
-          <a href="#section-2"><i class="fas fa-chevron-down animated bounce infinite"></i></a>
+          <a href="#section-2" class="hvr-bob"><i class="fas fa-chevron-down"></i></a>
         </div>
       </div>
     </div>
@@ -573,7 +573,7 @@
                         <input type="email" class="form-control" autocomplete="off" required name="email_pemesan" placeholder="Email Pemesan">
                       </div>
                       <div class="form-group form-reservasi">
-                        <input type="number" class="form-control" autocomplete="off" required name="jumlah_kursi" placeholder="Jumlah Kursi">
+                        <input type="number" class="form-control" autocomplete="off" max="10" required name="jumlah_kursi" placeholder="Jumlah Kursi">
                       </div>
                       <div class="form-group form-reservasi">
                         <input type="time" name="waktu_reservasi" autocomplete="off" required class="form-control">
@@ -870,17 +870,18 @@
     <script src="assets/js/buttonUp.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/nav-options.js"></script>
+    <script src="assets/js/auto-hover.js"></script>
     <script>
       AOS.init();
     </script>
     <script>
       $('.carousel-menu-1').carousel({
-        interval: 4000
+        interval: 4000,
       })
     </script>
     <script>
       $('.carousel-ulasan-pengunjung').carousel({
-        interval: 4000
+        interval: 4000,
       })
     </script>
     <script type="text/javascript">
